@@ -1,0 +1,25 @@
+<div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <div class="table100">
+                    <table>
+                        <thead>
+                            <tr class="table100-head">
+								<th class="column1">Name</th>
+								<th class="column2">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{# each items}}
+                                <tr>
+									<td class="column1">{{this.name}}</td>
+                                    <td class="column2">{{this.message}}</td>
+                                </tr>
+                            {{/each}}
+                                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
