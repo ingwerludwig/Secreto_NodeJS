@@ -15,10 +15,10 @@ npm install
 Make sure to install [MySQL](https://dev.mysql.com/downloads/installer/) as your operating system
 
 ```javascript
-# Use this query to create Database (IMPORTANT!!)
+Use this query to create Database (IMPORTANT!!)
 CREATE DATABASE user_feedback
 
-# Run your app
+Run your app
 npm start
 ```
 
