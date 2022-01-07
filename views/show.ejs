@@ -10,12 +10,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {{# each items}}
+                            <% for(let i=0 ; i<items.length ; i++) { %>
                                 <tr>
-									<td class="column1">{{this.name}}</td>
-                                    <td class="column2">{{this.message}}</td>
+									<td class="column1"> <%= items[i].name %> </td>
+                                    <td class="column2"> <%= items[i].message %> </td>
                                 </tr>
-                            {{/each}}
+                            <% } %>
                                 
                         </tbody>
                     </table>
