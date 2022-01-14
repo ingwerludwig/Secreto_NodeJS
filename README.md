@@ -20,6 +20,18 @@ CREATE DATABASE user_feedback;
 
 # Run your app
 npm start
+
+# Use Seed
+npm seed
+
+# Undo Seed
+npm undo-seed
+
+# Migrate Database
+npm run migrate
+
+# Revert Migrate Database
+npm run down
 ```
 
 ## License
