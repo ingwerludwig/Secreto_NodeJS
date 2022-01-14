@@ -32,6 +32,15 @@ npm run migrate
 
 # Revert Migrate Database
 npm run down
+
+# Migrate Add Column
+npm run add
+
+# Migrate Change Column
+npm run update
+
+# Migrate Delete Column
+# Down of "Migrate Change Column"
 ```
 
 ## License

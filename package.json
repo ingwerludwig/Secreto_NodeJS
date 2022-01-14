@@ -6,6 +6,7 @@
   "scripts": {
     "make-model": "npx sequelize-cli model:generate --name User --attributes name:string,message:string",
     "make-seed": "npx sequelize-cli seed:generate --name demo-user",
+    "add": "npx sequelize-cli migration:create --name add-column",
     "update": "npx sequelize-cli migration:create --name modify-column",
     "seed": "npx sequelize-cli db:seed:all",
     "undo-seed": "npx sequelize-cli db:seed:undo",

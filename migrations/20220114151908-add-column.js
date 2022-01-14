@@ -3,8 +3,8 @@
 module.exports = {
   up: function(queryInterface, Sequelize) {
     return queryInterface.addColumn(
-      'Users', //table name
-      'new_field', //new field
+      'Users',
+      'new_field',
      Sequelize.BOOLEAN
     );
 
