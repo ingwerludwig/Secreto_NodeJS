@@ -3,15 +3,20 @@ exports.updateuser = (req, res) => {res.render('update')}
 exports.deleteuser = (req, res) => {res.render('delete')}
 
 const db = require('../database/connection')
-const user = db.userModel
+const uuid = require('uuid')
+const user = db.user
 const alert = require('alert')
 db.sequelize.sync()
 
 exports.insert = (req, res) => {
     let inserted = {
+        id: uuid.v4(),
         name: req.body.name,
-        message: req.body.message
+        message: req.body.message,
+        createdAt: new Date(),
+        updatedAt: new Date()
     }
+    console.log(inserted)
     user.findAll({where:{name:inserted.name},raw:true})
     .then((data)=> {
         if(data.length>0){
